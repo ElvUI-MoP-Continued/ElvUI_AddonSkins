@@ -37,8 +37,9 @@ AS.addonList = {
 	Postal					= "3.5.2",
 	RCLootCouncil			= "1.6.3",
 	Recount					= "r1269",
-	SilverDragon			= "r214",
 	Skada					= "1.4-19",
+	Details                 = "MoP-Backport",
+	SilverDragon			= "r214",
 	Spy						= "3.1.6",
 	TrinketMenu				= "5.0.4",
 	WeakAuras				= "2.0.8",
@@ -261,7 +262,8 @@ function AS:InsertOptions()
 						values = {
 							["Recount"] = "Recount",
 							["Omen"] = "Omen",
-							["Skada"] = "Skada"
+							["Skada"] = "Skada",
+							["Details"] = "Details",
 						},
 						disabled = function() return E.db.addOnSkins.embed.embedType == "DISABLE" end
 					},
@@ -272,7 +274,8 @@ function AS:InsertOptions()
 						values = {
 							["Recount"] = "Recount",
 							["Omen"] = "Omen",
-							["Skada"] = "Skada"
+							["Skada"] = "Skada",
+							["Details"] = "Details",
 						},
 						disabled = function() return E.db.addOnSkins.embed.embedType ~= "DOUBLE" end
 					},
